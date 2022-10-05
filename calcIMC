@@ -1,0 +1,6 @@
+println("Introduza o peso em Kg")
+var Kilos : Short = readln().toShort()
+println("Introduza a altura em metros")
+var Altura : Float = readln().toFloat()
+var IMC : Float = Kilos/(Altura * Altura)
+println("O seu IMC é $IMC")
