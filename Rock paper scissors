@@ -1,0 +1,32 @@
+fun main() {
+    println("Digite 1 para pedra, 2 para papel ou 3 para tesoura, e veremos se você pode me vencer...")
+    val jogada: Int = readln().toInt()
+
+    if (jogada == 1) {
+        println("Você jogou Pedra")
+    } else if (jogada == 2) {
+            println("Você jogou Papel")
+        } else {
+            println("Você jogou Tesoura")
+        }
+        val num = (1..3).random()
+
+        val resultado: String
+        if (num == 1) {
+            resultado = "Pedra"
+            println("Minha jogada é $resultado!")
+        } else if (num == 2) {
+            resultado = "Papel"
+            println("Minha jogada é $resultado!")
+        } else {
+            resultado = "Tesoura"
+            println("Minha jogada é $resultado!")
+        }
+    if (jogada == num) {
+        println("Parece que empatamos. Eu quero uma revanche!")
+    } else if (jogada == 1 && num == 2 || jogada == 2 && num == 3 || jogada == 3 && num == 1) {
+        println("Parece que eu ganhei não é mesmo??! ha ha ha")
+    } else {
+        println("Você teve sorte... Vamos de novo!")
+    }
+}
